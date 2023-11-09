@@ -10,12 +10,12 @@ const Navbar = () => {
                     <ul className="hidden md:flex gap-x-6 text-white text-sm">
                         <li>
                             <Link href="/about">
-                                <p>About</p>
+                                <p className="hover:text-slate-600 transition duration-75 ease-in-out">About</p>
                             </Link>
                         </li>
                         <li>
                             <Link href="/contact">
-                                <p>Contact</p>
+                                <p className="hover:text-slate-600 transition duration-75 ease-in-out">Contact</p>
                             </Link>
                         </li>
                     </ul>
