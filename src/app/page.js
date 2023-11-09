@@ -1,6 +1,6 @@
-export default function Home({ children, router }) {
+export default function Home() {
   return (
-    <div>
+    <div className="bg-gray-900">
       Hello
     </div>
   )
