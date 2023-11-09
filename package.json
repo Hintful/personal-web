@@ -1,5 +1,5 @@
 {
-  "name": "personal-web",
+  "name": "kurt-web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,10 +8,8 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "author": "Kurt Choi<choi.kurt3@gmail.com>",
   "dependencies": {
-    "@chakra-ui/react": "^2.8.1",
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
     "framer-motion": "^10.16.4",
     "next": "14.0.1",
     "react": "^18",
