@@ -3,24 +3,25 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     return ( 
-        <div className="w-full h-20 bg-gray-700 sticky top-0">
-            <div className="container mx-auto px-4 h-full">
+        <div className="h-14 bg-deepgray sticky top-0 select-none">
+            <div className="container mx-auto h-full px-4">
                 <div className="flex justify-between items-center h-full">
                     <Logo />
-                    <ul className="hidden md:flex gap-x-6 text-white">
+                    <ul className="hidden md:flex gap-x-6 text-white text-sm">
                         <li>
                             <Link href="/about">
-                                <p>About Me</p>
+                                <p>About</p>
                             </Link>
                         </li>
                         <li>
                             <Link href="/contact">
-                                <p>Contact Me</p>
+                                <p>Contact</p>
                             </Link>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div className="mx-auto border-b drop-shadow-[0_5px_3px_rgba(255,255,255,0.25)]"/>
         </div>
      );
 }

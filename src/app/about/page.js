@@ -1,6 +1,6 @@
 const Page = () => {
     return ( 
-        <div>
+        <div className="mt-4 text-white">
             About
         </div>
      );

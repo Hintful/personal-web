@@ -1,6 +1,6 @@
 const Contact = () => {
     return ( 
-        <div>
+        <div className="mt-4 text-white">
             Contact Me
         </div>
      );

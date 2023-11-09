@@ -1,7 +1,13 @@
+const { default: Link } = require("next/link")
+
 const Logo = () => {
-    return ( <div>
-        Kurt
-    </div> );
+    return ( 
+        <Link href="/">
+            <div className="text-white text-lg font-bold select-none">
+                Kurt
+            </div>
+        </Link>
+    );
 }
  
 export default Logo;
