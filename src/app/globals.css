@@ -19,9 +19,10 @@ body {
   background-repeat: no-repeat;
   background-size: 120% 0.15em;
   background-position: 0 85%;
-  transition: background-size 0.1s ease-in-out;
+  transition: background-size 0.05s ease-in-out;
 }
 
 .gradient-underline:hover {
   background-size: 120% 85%;
+  padding-top: 0.2em;
 }

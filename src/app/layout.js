@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={monaSans.className}>
-        <div className="container mt-8 px-16 max-w-3xl mx-auto">
+        <div className="container mt-8 px-16 max-w-3xl mx-auto antialiased">
           <Navigation />
           {children}
         </div>
