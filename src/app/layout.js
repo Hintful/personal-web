@@ -1,10 +1,35 @@
-import { Roboto } from 'next/font/google'
+import localFont from 'next/font/local'
 import './globals.css'
 import Navigation from './components/navigation/Navigation'
 
-const roboto = Roboto({ 
-  weight: '400',
-  subsets: ['latin'] 
+const monaSans = localFont({
+  src: [
+    {
+      path: '../../fonts/MonaSans-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../../fonts/MonaSans-Italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    {
+      path: '../../fonts/MonaSans-Bold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+    {
+      path: '../../fonts/MonaSans-SemiBold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
+    {
+      path: '../../fonts/MonaSans-Light.woff2',
+      weight: '300',
+      style: 'normal',
+    },
+  ],
 })
 
 export const metadata = {
@@ -15,9 +40,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
-        <Navigation />
-        {children}
+      <body className={monaSans.className}>
+        <div className="container mt-8 px-16 max-w-3xl mx-auto">
+          <Navigation />
+          {children}
+        </div>
       </body>
     </html>
   )
