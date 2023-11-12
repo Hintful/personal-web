@@ -3,11 +3,11 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     return ( 
-        <div className="py-8 bg-deepgray sticky top-0 select-none">
+        <div className="py-8 sticky top-0 select-none">
             <div className="container mx-auto h-full px-4">
                 <div className="flex justify-between items-center h-full">
                     <Logo />
-                    <ul className="hidden md:flex gap-x-6 text-white text-sm font-semibold">
+                    <ul className="hidden md:flex gap-x-6 text-slate-200 text-sm font-semibold">
                         <li>
                             <Link href="/about">
                                 <p className="hover:text-slate-600 transition duration-75 ease-in-out">About</p>

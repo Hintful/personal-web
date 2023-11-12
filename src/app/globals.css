@@ -7,3 +7,21 @@ body {
   /* width: 75%; */
   margin: auto;
 }
+
+@layer components {
+  .text-gradient-primary {
+    @apply bg-gradient-to-br from-cyan-400 via-blue-500 to-purple-500 inline-block text-transparent bg-clip-text;
+  }
+}
+
+.gradient-underline {
+  background-image: linear-gradient(120deg, #22d3ee 0%, #3b82f6 50%, #a855f7 100%);
+  background-repeat: no-repeat;
+  background-size: 120% 0.15em;
+  background-position: 0 85%;
+  transition: background-size 0.1s ease-in-out;
+}
+
+.gradient-underline:hover {
+  background-size: 120% 85%;
+}
