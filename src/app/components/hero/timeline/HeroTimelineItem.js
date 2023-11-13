@@ -11,7 +11,7 @@ const HeroTimelineItem = (props) => {
                 </span>
                 <div className="pl-2">
                     <h3 class="mb-2 text-md font-semibold text-gray-900 dark:text-white">
-                        <RoughNotation show={true} animationDelay={(BASE_ANIMATION_OFFSET + ((props.index + 1) * 300)).toString()}>
+                        <RoughNotation show={true} multiline={true} animationDelay={(BASE_ANIMATION_OFFSET + ((props.index + 1) * 300)).toString()}>
                             { props.main }
                         </RoughNotation>
                     </h3>

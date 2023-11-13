@@ -8,7 +8,7 @@ const HeroHeader = () => {
             <div className="relative z-10">
                 <RoughNotationGroup show={true}>
                     <div className="flex-col space-y-3 opacity-95">
-                        <div className="z-10">Hello, my name is <p className="text-gradient-primary font-bold">Kurt</p>.</div>
+                        <div className="z-10">Hello, my name is <div className="inline-block"><p className="text-gradient-primary font-bold">Kurt</p>.</div></div>
                         <div>I'm currently a <RoughNotation type="highlight" color="#3b82f6" multiline="true">Software Engineer</RoughNotation> at <RoughNotation type="underline" color="#3b82f6">Amazon</RoughNotation>.</div>
                     </div>    
                 </RoughNotationGroup>
