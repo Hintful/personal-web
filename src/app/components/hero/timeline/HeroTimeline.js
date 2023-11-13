@@ -21,13 +21,15 @@ const HeroTimeline = () => {
         {
             main: "First experience with coding",
             time: "2010",
-            content: "My first experience with coding with C/C++ - eventually also participated in Canadian Computing Contest (CCC) Junior Division in 2011, placing Top 10 country-wide",
+            content: "My first experience with coding with C/C++ - eventually also participated in Canadian Computing Contest (CCC) Junior Division in 2011,\
+             placing Top 10 country-wide",
             icon: <FontAwesomeIcon className="h-3.5 w-3.5" icon={faTerminal} />
         },
         {
             main: "Born in South Korea",
             time: "1995",
-            content: "I was born in South Korea in 1995, and my interest in computers date all the way before Y2K in 2000 as I was fascinated by computers as early as age 3-4 when my dad first brought home a Macintosh",
+            content: "I was born in South Korea in 1995, and my interest in computers date all the way before Y2K in 2000 as I was fascinated by computers \
+            as early as age 3-4 when my dad first brought home a Macintosh",
             icon: <FontAwesomeIcon className="h-4 w-4" icon={faStar} />
         }
     ]
