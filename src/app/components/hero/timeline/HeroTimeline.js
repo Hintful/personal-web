@@ -1,14 +1,43 @@
 import HeroTimelineItem from "./HeroTimelineItem";
-import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
+import { RoughNotation } from "react-rough-notation";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAmazon } from '@fortawesome/free-brands-svg-icons';
+import { faGraduationCap, faTerminal, faStar } from '@fortawesome/free-solid-svg-icons';
 
 const HeroTimeline = () => {
+    const timelineItems = [
+        {
+            main: "Software Development Engineer @ Amazon",
+            time: "Oct. 2021 - Present",
+            content: "Part of backend team owning Amazon Kids+ subscription core technologies, serving over 10 million customers around the world",
+            icon: <FontAwesomeIcon className="h-4 w-4" icon={faAmazon} />
+        },
+        {
+            main: "Graduated from University of Waterloo",
+            time: "June. 2021",
+            content: "Graduated with a BCS in Computer Science at University of Waterloo",
+            icon: <FontAwesomeIcon className="h-4 w-4" icon={faGraduationCap} />
+        },
+        {
+            main: "First experience with coding",
+            time: "2010",
+            content: "My first experience with coding with C/C++ - eventually also participated in Canadian Computing Contest (CCC) Junior Division in 2011, placing Top 10 country-wide",
+            icon: <FontAwesomeIcon className="h-3.5 w-3.5" icon={faTerminal} />
+        },
+        {
+            main: "Born in South Korea",
+            time: "1995",
+            content: "I was born in South Korea in 1995, and my interest in computers date all the way before Y2K in 2000 as I was fascinated by computers as early as age 3-4 when my dad first brought home a Macintosh",
+            icon: <FontAwesomeIcon className="h-4 w-4" icon={faStar} />
+        }
+    ]
     return ( 
         <div className="flex-col space-y-8">
             <span className="text-xl font-bold"><RoughNotation color="#3b82f6" animationDelay="1500" show={true}>Timeline</RoughNotation></span>
             <ol class="relative border-s border-gray-200 dark:border-gray-700 space-y-8">
-                <HeroTimelineItem main={"Software Development Engineer @ Amazon"} sub={"Oct. 2021 - Present"} content={"Working on Amazon Kids+ subscription core technologies, serving over 10 million customers around the world"} />
-                <HeroTimelineItem main={"Graduated from University of Waterloo"} sub={"June. 2021"} content={"Graduated with a BCS in Computer Science at University of Waterloo"} />
-                <HeroTimelineItem main={"First experience with coding"} sub={"2010"} content={"First experience with coding with C/C++ - eventually also participated in Canadian Computing Contest (CCC) in 2011"} />
+                { timelineItems.map((item, idx) => {
+                    return <HeroTimelineItem main={item.main} time={item.time} content={item.content} icon={item.icon} index={idx} />
+                })}
             </ol>
         </div>
     );
