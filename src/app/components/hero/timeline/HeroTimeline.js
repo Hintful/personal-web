@@ -34,14 +34,19 @@ const HeroTimeline = () => {
         }
     ]
     return ( 
-        <div className="flex-col space-y-8">
-            <span className="text-xl font-bold"><RoughNotation color="#3b82f6" animationDelay="1500" show={true}>Timeline</RoughNotation></span>
-            <ol class="relative border-s border-gray-200 dark:border-gray-700 space-y-8">
-                { timelineItems.map((item, idx) => {
-                    return <HeroTimelineItem main={item.main} time={item.time} content={item.content} icon={item.icon} index={idx} />
-                })}
-            </ol>
+        <div>
+            <div className="relative z-0 -mb-36 rounded-full blur-[160px] opacity-100 w-48 h-48 bg-blue-500 top-72 left-72" />
+            <div className="relative z-0 -mb-36 rounded-full blur-[120px] opacity-75 w-36 h-48 bg-purple-300 top-96 left-48" />
+            <div className="flex-col space-y-8 z-10">
+                <span className="text-xl font-bold"><RoughNotation color="#3b82f6" animationDelay="1500" show={true}>Timeline</RoughNotation></span>
+                <ol className="relative border-s border-gray-200 dark:border-gray-700 space-y-8">
+                    { timelineItems.map((item, idx) => {
+                        return <HeroTimelineItem main={item.main} time={item.time} content={item.content} icon={item.icon} index={idx} />
+                    })}
+                </ol>
+            </div>
         </div>
+        
     );
 }
  
