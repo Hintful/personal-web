@@ -7,8 +7,10 @@ const HeroHeader = () => {
             <div className="relative z-0 -mb-36 rounded-full blur-[96px] opacity-75 w-36 h-48 bg-purple-300 top-20 left-40" />
             <div className="relative z-10">
                 <RoughNotationGroup show={true}>
-                    <div className="z-10">Hello, my name is <p className="text-gradient-primary font-bold">Kurt</p>.</div>
-                    <div>I'm currently a <RoughNotation type="highlight" color="#3b82f6" multiline="true">Software Engineer</RoughNotation> at <RoughNotation type="underline" color="#3b82f6">Amazon</RoughNotation>.</div>
+                    <div className="flex-col space-y-3 opacity-95">
+                        <div className="z-10">Hello, my name is <p className="text-gradient-primary font-bold">Kurt</p>.</div>
+                        <div>I'm currently a <RoughNotation type="highlight" color="#3b82f6" multiline="true">Software Engineer</RoughNotation> at <RoughNotation type="underline" color="#3b82f6">Amazon</RoughNotation>.</div>
+                    </div>    
                 </RoughNotationGroup>
             </div>
       </div>
