@@ -44,9 +44,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={monaSans.className}>
-        <div className="container mt-8 px-12 pb-12 max-w-3xl mx-auto antialiased">
-          <Navigation />
-          {children}
+        <div className="grain h-fit z-0">
+          <div className="container mt-8 px-12 pb-12 max-w-3xl mx-auto antialiased z-1">
+            <Navigation />
+            {children}
+          </div>
         </div>
       </body>
     </html>
