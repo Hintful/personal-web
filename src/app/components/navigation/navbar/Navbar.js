@@ -3,10 +3,10 @@ import Logo from "./Logo";
 
 const Navbar = () => {
     const items = [
-        {
-            name: "About",
-            link: "/about"
-        },
+        // {
+        //     name: "About",
+        //     link: "/about"
+        // },
         {
             name: "Project",
             link: "/project"
@@ -16,7 +16,7 @@ const Navbar = () => {
             link: "/contact"
         }
     ]
-    
+
     return ( 
         <div className="py-8 sticky top-0 select-none">
             <div className="container mx-auto h-full px-4">
