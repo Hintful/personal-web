@@ -1,7 +1,7 @@
 const Page = () => {
     return ( 
-        <div className="mt-4 text-white">
-            About
+        <div className="mt-4 text-white border pr-2">
+            Projects
         </div>
      );
 }
