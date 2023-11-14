@@ -41,7 +41,7 @@ const HeroTimeline = () => {
                 <span className="text-xl font-bold"><RoughNotation color="#3b82f6" animationDelay="1500" show={true}>Timeline</RoughNotation></span>
                 <ol className="relative border-s border-gray-200 dark:border-gray-700 space-y-8">
                     { timelineItems.map((item, idx) => {
-                        return <HeroTimelineItem main={item.main} time={item.time} content={item.content} icon={item.icon} index={idx} />
+                        return <HeroTimelineItem main={item.main} time={item.time} content={item.content} icon={item.icon} index={idx} key={idx} />
                     })}
                 </ol>
             </div>
