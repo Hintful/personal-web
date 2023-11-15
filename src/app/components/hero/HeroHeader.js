@@ -2,7 +2,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 const HeroHeader = () => {
     return ( 
-        <div className="pt-8 text-3xl font-semibold leading-tight pr-2 text-white">
+        <div className="pt-24 text-3xl font-semibold leading-tight pr-2 text-white">
             <div className="relative z-0 -mb-36 rounded-full blur-[128px] opacity-100 w-48 h-48 bg-blue-500 top-20 -left-10" />
             <div className="relative z-0 -mb-36 rounded-full blur-[96px] opacity-75 w-36 h-48 bg-purple-300 top-20 left-40" />
             <div className="relative z-10">
