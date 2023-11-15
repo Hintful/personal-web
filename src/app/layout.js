@@ -3,6 +3,7 @@ import './globals.css'
 import Navigation from './components/navigation/Navigation'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
+import Navbar from './components/navigation/navbar/Navbar'
 config.autoAddCss = false
 
 const monaSans = localFont({
@@ -52,7 +53,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={getBodyClasses()}>
         <div className="container mt-8 px-12 pb-24 max-w-3xl mx-auto antialiased z-1 h-max">
-          <Navigation />
+          <Navbar />
           {children}
         </div>
       </body>
