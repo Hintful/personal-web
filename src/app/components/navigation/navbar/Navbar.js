@@ -18,8 +18,8 @@ const Navbar = () => {
     ]
 
     return ( 
-        <div className="py-8 sticky top-0 select-none">
-            <div className="container mx-auto h-full px-4">
+        <nav className="py-8 w-full left-0 top-0 fixed z-10 blur-backdrop">
+            <div className="container max-w-3xl mx-auto h-full px-8">
                 <div className="flex justify-between items-center h-full">
                     <Logo />
                     <ul className="hidden md:flex gap-x-6 text-slate-200 text-sm font-semibold">
@@ -35,7 +35,7 @@ const Navbar = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
      );
 }
  
