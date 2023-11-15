@@ -51,7 +51,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={getBodyClasses()}>
-        <div className="container mt-8 px-12 pb-12 max-w-3xl mx-auto antialiased z-1 h-max">
+        <div className="container mt-8 px-12 pb-24 max-w-3xl mx-auto antialiased z-1 h-max">
           <Navigation />
           {children}
         </div>

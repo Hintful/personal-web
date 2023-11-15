@@ -1,6 +1,6 @@
 const Page = () => {
     return ( 
-        <div className="mt-4 text-white border pr-2">
+        <div className="flex-col mt-4 text-white">
             Projects
         </div>
      );
