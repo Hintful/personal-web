@@ -24,8 +24,8 @@ const Navbar = () => {
                     <Logo />
                     <ul className="hidden md:flex gap-x-6 text-slate-200 text-sm font-semibold">
                         {
-                            items.map(item => (
-                                <li>
+                            items.map((item, idx) => (
+                                <li key={idx}>
                                     <Link href={item.link}>
                                         <p className="hover:text-slate-600 transition duration-75 ease-in-out">{item.name}</p>
                                     </Link>
