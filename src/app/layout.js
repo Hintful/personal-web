@@ -40,10 +40,17 @@ export const metadata = {
   description: 'Welcome to Kurt\'s website',
 }
 
+const getBodyClasses = () => {
+  const fontClasses = monaSans.className;
+  const customClasses = "scrollbar-hide"
+  
+  return fontClasses.concat(' ', customClasses);
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={monaSans.className}>
+      <body className={getBodyClasses()}>
         <div className="container mt-8 px-12 pb-12 max-w-3xl mx-auto antialiased z-1 h-max">
           <Navigation />
           {children}
