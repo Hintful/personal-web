@@ -10,11 +10,6 @@ const Contact = () => {
         <div className="flex-col mt-48 text-white h-[60vh]">
             <div className="relative z-0 -mb-36 rounded-full blur-[128px] opacity-100 w-48 h-48 bg-blue-500 top-20 left-40" />
             <div className="relative z-0 -mb-36 rounded-full blur-[96px] opacity-75 w-36 h-48 bg-purple-300 top-20 -left-10" />
-            <div className="">
-                {/* <span className="text-4xl font-bold tracking-tighter opacity-80">
-                    Contact Me
-                </span> */}
-            </div>
             <div className="flex flex-col items-center space-y-2">
                 <div className="flex mx-auto z-10">
                     <Link href="https://www.linkedin.com/in/kurtchoi/" target="_blank">
@@ -39,17 +34,6 @@ const Contact = () => {
                     </Link>
                 </div>
 
-                {/* <div className="flex mx-auto z-10">
-                    <button type="button" onClick={() => copyEmail()} className="text-white z-10 bg-[#7f41b9] hover:bg-[#7f41b9]/90 focus:ring-4 focus:outline-none focus:ring-[#7f41b9]/50 font-medium rounded-lg text-sm px-3.5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#7f41b9]/30 me-2">
-                        <svg className="w-6 h-6 me-1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
-                            <path strokeLinecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
-                        </svg>
-
-                        <span className="font-semibold tracking-tight">Copy e-mail</span>
-                    </button>
-                </div> */}
-
-
                 <div class="flex pt-4">
                     <div class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-e-0 border-gray-300 dark:border-gray-700 dark:text-white rounded-s-lg focus:ring-4 dark:bg-gray-600 dark:focus:ring-gray-800" type="button">
                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
@@ -57,8 +41,8 @@ const Contact = () => {
                         </svg>
                     </div>
                     <div class="relative w-full">
-                        <input class="block p-2.5 w-56 z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg rounded-s-gray-100 rounded-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" value="choi.kurt3@gmail.com" readOnly />
-                        <button onClick={() => copyEmail()} class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Copy</button>
+                        <input class="block p-2.5 w-56 z-20 text-sm text-white border-gray-600 bg-gray-700 rounded-e-lg rounded-s-gray-100 rounded-s-2 border border-gray-300 outline-none focus:outline-none" value="choi.kurt3@gmail.com" readOnly />
+                        <button onClick={() => copyEmail()} class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:outline-none">Copy</button>
                     </div>
                 </div>
             </div>
