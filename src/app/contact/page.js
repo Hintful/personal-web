@@ -1,13 +1,18 @@
 "use client"
 
 import Link from "next/link";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Contact = () => {
     const copyEmail = () => {
         navigator.clipboard.writeText("choi.kurt3@gmail.com")
+        toast.success('Copied to clipboard!', {
+            id: 'clipboard',
+        });
     }
     return ( 
         <div className="flex-col mt-48 text-white h-[60vh]">
+            <Toaster />
             <div className="relative z-0 -mb-36 rounded-full blur-[128px] opacity-100 w-48 h-48 bg-blue-500 top-20 left-40" />
             <div className="relative z-0 -mb-36 rounded-full blur-[96px] opacity-75 w-36 h-48 bg-purple-300 top-20 -left-10" />
             <div className="flex flex-col items-center space-y-2">
