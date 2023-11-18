@@ -1,6 +1,5 @@
 import localFont from 'next/font/local'
 import './globals.css'
-import Navigation from './components/navigation/Navigation'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Navbar from './components/navigation/navbar/Navbar'
