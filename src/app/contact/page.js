@@ -34,15 +34,15 @@ const Contact = () => {
                     </Link>
                 </div>
 
-                <div class="flex pt-4">
-                    <div class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-e-0 border-gray-300 dark:border-gray-700 dark:text-white rounded-s-lg focus:ring-4 dark:bg-gray-600 dark:focus:ring-gray-800" type="button">
+                <div className="flex pt-4">
+                    <div className="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-e-0 border-gray-300 dark:border-gray-700 dark:text-white rounded-s-lg focus:ring-4 dark:bg-gray-600 dark:focus:ring-gray-800" type="button">
                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
                             <path strokeLinecap="round" d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
                         </svg>
                     </div>
-                    <div class="relative w-full">
-                        <input class="block p-2.5 w-56 z-20 text-sm text-white border-gray-600 bg-gray-700 rounded-e-lg rounded-s-gray-100 rounded-s-2 border border-gray-300 outline-none focus:outline-none" value="choi.kurt3@gmail.com" readOnly />
-                        <button onClick={() => copyEmail()} class="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:outline-none">Copy</button>
+                    <div className="relative w-full">
+                        <input className="block p-2.5 w-56 z-20 text-sm text-white border-gray-600 bg-gray-700 rounded-e-lg rounded-s-gray-100 rounded-s-2 border outline-none focus:outline-none" value="choi.kurt3@gmail.com" readOnly />
+                        <button onClick={() => copyEmail()} className="absolute top-0 end-0 p-2.5 h-full text-sm font-medium text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:outline-none">Copy</button>
                     </div>
                 </div>
             </div>
