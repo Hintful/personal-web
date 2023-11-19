@@ -1,6 +1,9 @@
+"use client"
+
 import ProjectTag from "./ProjectTag";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareGithub } from '@fortawesome/free-brands-svg-icons';
+import { Tooltip } from 'react-tooltip'
 import Link from "next/link";
 
 const ProjectItem = (props) => {
@@ -10,7 +13,9 @@ const ProjectItem = (props) => {
                 <span className="text-3xl tracking-tight font-semibold">{ props.item.name }</span>
                 <div className="flex items-center space-x-1">
                     <Link href={props.item.link} target="_blank">
-                        <FontAwesomeIcon className="hover:text-gray-700 transition ease-in-out" icon={faSquareGithub} size="2xl" />
+                        <FontAwesomeIcon className="hover:text-gray-700 transition ease-in-out" icon={faSquareGithub} size="2xl" 
+                            data-tooltip-id="github-tooltip" data-tooltip-content="GitHub Repository"
+                        />
                     </Link>
                 </div>
             </div>
@@ -26,7 +31,7 @@ const ProjectItem = (props) => {
                     { props.item.description }
                 </span>
             </div>
-            
+            <Tooltip id="github-tooltip" style={{ fontSize: "small" }}/>
         </div>
     );
 }
