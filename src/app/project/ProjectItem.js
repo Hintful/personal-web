@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const ProjectItem = (props) => {
     return (  
-        <div className="flex-col border w-full rounded-lg p-4 space-y-1">
+        <div className="flex-col w-full rounded-lg p-8 space-y-2 backdrop-blur-lg bg-black/25">
             <div className="flex items-center space-x-2 w-full justify-between">
                 <span className="text-3xl tracking-tight font-semibold">{ props.item.name }</span>
                 <div className="flex items-center space-x-1">
