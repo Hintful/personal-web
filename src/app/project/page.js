@@ -15,8 +15,8 @@ const Page = () => {
             <span className="text-white text-2xl">Projects</span>
             <div className="flex-col">
                 {
-                    projects.map(project => (
-                        <ProjectItem item={project} />
+                    projects.map((project, idx) => (
+                        <ProjectItem item={project} key={idx} />
                     ))
                 }
             </div>

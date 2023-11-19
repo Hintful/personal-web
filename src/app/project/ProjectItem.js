@@ -16,8 +16,8 @@ const ProjectItem = (props) => {
             </div>
             <div className="flex space-x-1">
                 {
-                    props.item.tags.map(tag => (
-                        <ProjectTag name={tag} />
+                    props.item.tags.map((tag, idx) => (
+                        <ProjectTag name={tag} key={idx} />
                     ))
                 }
             </div>
