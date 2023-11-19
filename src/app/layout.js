@@ -42,7 +42,7 @@ export const metadata = {
 
 const getBodyClasses = () => {
   const fontClasses = monaSans.className;
-  const customClasses = "scrollbar-hide"
+  const customClasses = "scrollbar-hide grain"
   
   return fontClasses.concat(' ', customClasses);
 }
