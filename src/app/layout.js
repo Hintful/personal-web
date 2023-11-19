@@ -3,6 +3,7 @@ import './globals.css'
 import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 import Navbar from './components/navigation/navbar/Navbar'
+import 'react-tooltip/dist/react-tooltip.css'
 config.autoAddCss = false
 
 const monaSans = localFont({

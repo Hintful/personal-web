@@ -21,6 +21,7 @@
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
     "react-rough-notation": "^1.0.5",
+    "react-tooltip": "^5.23.0",
     "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
