@@ -11,7 +11,7 @@ const Page = () => {
     ]
 
     return ( 
-        <div className="flex-col mt-36 text-white space-y-12 relative">
+        <div className="flex-col mt-36 text-white space-y-12 relative h-screen">
             <span className="text-white text-2xl">Projects</span>
             <div className="absolute z-0 -mb-36 rounded-full blur-[128px] opacity-100 w-48 h-48 bg-blue-500 top-20 -left-10" />
             <div className="absolute z-0 -mb-36 rounded-full blur-[96px] opacity-75 w-36 h-48 bg-purple-300 top-20 left-40" />
