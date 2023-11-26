@@ -37,10 +37,14 @@ const Navbar = () => {
                         </ul>
 
                         { /* Hamburger menu for mobile viewport */ }
-                        <div className="flex md:hidden text-slate-200 font-semibold">
-                            <span>
-                                Menu
-                            </span>
+                        <div className="flex md:hidden">
+                            <div className="text-slate-200 font-semibold border p-2.5 rounded-md hover:bg-white/10">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="0.8em" viewBox="0 0 448 512" fill="#ffffff">
+                                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
                     </div> 
                 </div>
