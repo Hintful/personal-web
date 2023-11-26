@@ -10,7 +10,7 @@ const ProjectItem = (props) => {
     return (  
         <div className="flex-col w-full rounded-lg p-8 space-y-2 backdrop-blur-lg bg-black/25 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
             <div className="flex items-center space-x-2 w-full justify-between">
-                <span className="text-3xl tracking-tight font-semibold">{ props.item.name }</span>
+                <span className="md:text-3xl text-2xl tracking-tight font-semibold">{ props.item.name }</span>
                 <div className="flex items-center space-x-1">
                     <Link href={props.item.link} target="_blank">
                         <FontAwesomeIcon className="hover:text-gray-700 transition ease-in-out" icon={faSquareGithub} size="2xl" 
